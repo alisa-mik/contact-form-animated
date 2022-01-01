@@ -127,9 +127,9 @@ form {
 }
 
 button {
-  font-family: 'Poppins, sans-serif';
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   background: #6190e8;
   color: white;
   border-radius: 0.2rem;
