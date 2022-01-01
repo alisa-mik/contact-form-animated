@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
   height: 100vh;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(90deg, #6190e8, #a7bfe8);
@@ -167,10 +168,15 @@ button {
 }
 
 @media screen and (max-width: 700px) {
+  body {
+    align-items: flex-start;
+    padding-top: 20px;
+    height: auto;
+  }
   form {
     align-items: center;
     width: 90vw;
-    height: 98vh;
+    max-height: 550px;
     flex-direction: column;
     padding: 3rem 2rem;
     justify-content: center;
