@@ -59,7 +59,7 @@ form {
   z-index: 1;
   pointer-events: none;
   padding: 0.5rem 0rem;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   opacity: 0.6;
   transform-origin: left;
 }
@@ -81,6 +81,7 @@ form {
   position: relative;
   display: flex;
   align-items: center;
+  padding-top: 0.5rem;
 }
 
 .checkbox {
@@ -161,20 +162,39 @@ button {
   opacity: 0;
 }
 
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 816px) {
   form {
+    align-items: center;
     width: 90vw;
-    min-height: 80vh;
+    height: 95vh;
     flex-direction: column;
     padding: 3rem 2rem;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 1.5rem;
   }
 
+  .contact-right,
+  .contact-left {
+    flex: 0;
+    width: fit-content;
+  }
+
+  .title {
+    margin-bottom: 1.5rem;
+  }
   #character {
-    transform: scale(0.4) translate(120%, 30%) scaleX(-1);
+    transform: scale(0.4) translate(100%, 30%) scaleX(-1);
+  }
+
+  .input-container {
+    margin: 1rem 0;
   }
 
   .placeholder {
     padding: 0.7rem 0rem;
+  }
+
+  button {
+    margin-top: 2rem;
   }
 }
