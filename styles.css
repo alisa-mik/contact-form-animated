@@ -15,17 +15,19 @@ body {
 
 form {
   min-height: 45vh;
-  width: 40vw;
+  min-width: 40vw;
   background: white;
   color: #777474;
   border-radius: 2rem;
-  padding: 3rem 5rem;
+  padding: 3rem 2rem;
   display: flex;
   position: relative;
+  gap: 2rem;
 }
 
 .title {
   color: #6391e8;
+  margin-bottom: 1.5rem;
 }
 
 .contact-right,
@@ -165,7 +167,7 @@ button {
 @media screen and (max-width: 816px) {
   form {
     align-items: center;
-    width: 90vw;
+    min-width: 90vw;
     height: 95vh;
     flex-direction: column;
     padding: 3rem 2rem;
